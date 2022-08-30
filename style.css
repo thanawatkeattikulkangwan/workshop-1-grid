@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Prompt:wght@100;300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Prompt", sans-serif;
+}
+body ::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-family: "Prompt", sans-serif;
+}
+body :-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-family: "Prompt", sans-serif;
+}
+body input {
+  font-family: "Poppins", sans-serif;
+  font-family: "Prompt", sans-serif;
+}
+body button {
+  cursor: pointer;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  display: grid;
+  justify-content: center;
+  border: 1px solid #dbdbdb;
+  position: fixed;
+  background-color: #ffffff;
+}
+.nav-bar .menu-main {
+  width: 975px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.nav-bar .menu-main .logo {
+  display: grid;
+  align-items: center;
+}
+.nav-bar .menu-main .logo img {
+  width: 120px;
+}
+.nav-bar .menu-main .search-box {
+  justify-self: center;
+}
+.nav-bar .menu-main .search-box .seach-input {
+  min-width: 268px;
+  width: 100%;
+  height: 36px;
+  padding: 2px 10px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+.nav-bar .menu-main .menu {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-end;
+}
+.nav-bar .menu-main .menu i {
+  font-size: 24px;
+  margin-left: 22px;
+  display: grid;
+  align-items: center;
+}
+.nav-bar .menu-main .menu :nth-child(1) {
+  margin-left: 0px !important;
+}
+.nav-bar .menu-main .menu img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin-left: 22px;
+  align-self: center;
+}
+
+.container {
+  max-width: 871px;
+  display: grid;
+  grid-template-columns: 470px 400px;
+  padding-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .content {
+  max-width: 470px;
+  width: 100%;
+  display: grid;
+  row-gap: 20px;
+  padding: 10px 0px;
+}
+.container .content .story {
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  height: 100px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 5px 8px;
+  overflow-x: scroll;
+}
+.container .content .story__item {
+  width: 77px;
+  display: grid;
+  place-items: center;
+  padding: 2px;
+}
+.container .content .story__item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.container .content .story__item label {
+  text-align: center;
+  width: 80%;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .content .post {
+  display: grid;
+}
+.container .content .post .item {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.container .content .post .item .acc-detail {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+.container .content .post .item .acc-detail__left {
+  display: grid;
+  grid-auto-flow: column;
+}
+.container .content .post .item .acc-detail__left__detail {
+  display: grid;
+  place-content: center;
+  margin-left: 5px;
+}
+.container .content .post .item .acc-detail__left__detail label {
+  font-size: 14px;
+}
+.container .content .post .item .acc-detail__left__detail span {
+  font-size: 12px;
+  font-weight: 300;
+}
+.container .content .post .item .acc-detail__left .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #dbdbdb;
+}
+.container .content .post .item img {
+  width: 100%;
+}
+.container .content .post .item .comment .interaction {
+  display: grid;
+  grid-template-columns: 40px 40px 40px 1fr;
+}
+.container .content .post .item .comment .interaction i {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 24px;
+}
+.container .content .post .item .comment .interaction :nth-child(4) {
+  margin-left: auto;
+}
+.container .content .post .item .comment .message {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 30px 1fr 30px;
+  align-items: center;
+  border-top: 1px solid #dbdbdb;
+  padding: 14px 8px;
+}
+.container .content .post .item .comment .message i {
+  width: 30px;
+  font-size: 24px;
+  display: grid;
+  align-items: center;
+}
+.container .content .post .item .comment .message input {
+  border: none;
+  outline: none;
+}
+.container .content .post .item .comment .message button {
+  border: none;
+  background-color: #ffffff;
+  color: #0095f6;
+  font-weight: bold;
+}
+.container .suggresstion {
+  max-width: 400;
+  width: 100%;
+  padding: 5px 8px;
+  margin-left: 20px;
+}
+.container .suggresstion .profile {
+  display: grid;
+  grid-template-columns: 60px 1fr 81px;
+  height: 100px;
+  align-items: center;
+}
+.container .suggresstion .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.container .suggresstion .profile__detail {
+  display: grid;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.container .suggresstion .profile__detail span {
+  color: #b3b3b3;
+}
+.container .suggresstion .profile button {
+  border: none;
+  background-color: #ffffff;
+  color: #0095f6;
+  font-weight: bold;
+}
+.container .suggresstion .for-you .header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-right: 19px;
+  align-items: center;
+}
+.container .suggresstion .for-you .header h4 {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+.container .suggresstion .for-you .header a {
+  text-align: end;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.container .suggresstion .for-you__item {
+  display: grid;
+  grid-template-columns: 35px 1fr 80px;
+  align-items: center;
+  padding: 8px 0px;
+}
+.container .suggresstion .for-you__item img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+.container .suggresstion .for-you__item .detail {
+  display: grid;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+.container .suggresstion .for-you__item .detail label {
+  font-size: 14px;
+}
+.container .suggresstion .for-you__item .detail span {
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.container .suggresstion .for-you__item button {
+  border: none;
+  background-color: #ffffff;
+  color: #0095f6;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
