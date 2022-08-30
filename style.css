@@ -266,7 +266,6 @@ body button {
 }
 .container .suggresstion .for-you__item .detail {
   display: grid;
-  flex-grow: 1;
   margin-left: 10px;
 }
 .container .suggresstion .for-you__item .detail label {
